@@ -8,7 +8,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import static org.mockito.Mockito.verify;
 
 @RunWith(MockitoJUnitRunner.class)
-public class ExampleUnitTest {
+public class TrackingPresenterTest {
 
     @Mock
     private TrackingService service;
