@@ -20,10 +20,10 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class MainActivityTest {
+public class TrackActivityTest {
 
     @Rule
-    public ActivityTestRule<MainActivity> mActivityTestRule = new ActivityTestRule<>(MainActivity.class);
+    public ActivityTestRule<TrackActivity> mActivityTestRule = new ActivityTestRule<>(TrackActivity.class);
 
     @Test
     public void whenTrackingProjectShowsTrackingInfo() {
