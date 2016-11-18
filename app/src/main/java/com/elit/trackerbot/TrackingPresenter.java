@@ -1,6 +1,6 @@
 package com.elit.trackerbot;
 
-public class TrackingPresenter implements TrackingServiceDelegate {
+public class TrackingPresenter implements TrackingServiceObserver {
 
     private final TrackingView view;
     private final TrackingService service;

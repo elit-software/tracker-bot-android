@@ -1,5 +1,5 @@
 package com.elit.trackerbot;
 
 public interface TrackingService {
-    void track(TrackingServiceDelegate delegate);
+    void track(TrackingServiceObserver delegate);
 }
