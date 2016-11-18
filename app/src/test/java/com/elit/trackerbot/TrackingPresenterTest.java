@@ -1,5 +1,9 @@
 package com.elit.trackerbot;
 
+import com.elit.trackerbot.core.TrackingPresenter;
+import com.elit.trackerbot.core.TrackingService;
+import com.elit.trackerbot.core.TrackingView;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
