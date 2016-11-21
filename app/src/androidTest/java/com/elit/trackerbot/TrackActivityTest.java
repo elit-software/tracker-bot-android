@@ -23,7 +23,7 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
 public class TrackActivityTest {
 
     @Rule
-    public ActivityTestRule<TrackActivity> mActivityTestRule = new ActivityTestRule<>(TrackActivity.class);
+    public ActivityTestRule<TrackActivity_> mActivityTestRule = new ActivityTestRule<>(TrackActivity_.class);
 
     @Test
     public void whenTrackingProjectShowsTrackingInfo() {

@@ -2,32 +2,33 @@ package com.elit.trackerbot;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
 import com.elit.trackerbot.core.TrackingPresenter;
 import com.elit.trackerbot.core.TrackingView;
 
+import org.androidannotations.annotations.Click;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ViewById;
+
+@EActivity(R.layout.activity_track)
 public class TrackActivity extends Activity implements TrackingView {
 
-    TrackingPresenter presenter;
+    @ViewById(R.id.trackTextView)
     TextView trackTextView;
+
+    TrackingPresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_track);
         presenter = new TrackingPresenter(this, new FakeTrackingService());
+    }
 
-        trackTextView = (TextView) findViewById(R.id.trackTextView);
-
-        findViewById(R.id.trackButton).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                presenter.track();
-            }
-        });
+    @Click
+    public void trackButton() {
+        presenter.track();
     }
 
     @Override
