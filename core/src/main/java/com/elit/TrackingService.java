@@ -1,4 +1,4 @@
-package com.elit.trackerbot.core;
+package com.elit;
 
 public interface TrackingService {
     void track(TrackingServiceObserver observer);

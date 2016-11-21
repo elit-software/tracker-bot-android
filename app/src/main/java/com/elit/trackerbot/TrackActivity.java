@@ -4,8 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.elit.trackerbot.core.TrackingPresenter;
-import com.elit.trackerbot.core.TrackingView;
+
+import com.elit.TrackingPresenter;
+import com.elit.TrackingView;
 
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EActivity;

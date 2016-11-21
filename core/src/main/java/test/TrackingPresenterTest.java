@@ -1,15 +1,14 @@
-package com.elit.trackerbot;
+package test;
 
-import com.elit.trackerbot.core.TrackingPresenter;
-import com.elit.trackerbot.core.TrackingService;
-import com.elit.trackerbot.core.TrackingView;
+import com.elit.TrackingPresenter;
+import com.elit.TrackingService;
+import com.elit.TrackingView;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
-
-import static org.mockito.Mockito.verify;
 
 @RunWith(MockitoJUnitRunner.class)
 public class TrackingPresenterTest {
@@ -26,7 +25,7 @@ public class TrackingPresenterTest {
 
         presenter.track();
 
-        verify(service).track(presenter);
+        Mockito.verify(service).track(presenter);
     }
 
     @Test public void
@@ -36,6 +35,6 @@ public class TrackingPresenterTest {
 
         presenter.didTrack(anInformation);
 
-        verify(view).showTrackInformation(anInformation);
+        Mockito.verify(view).showTrackInformation(anInformation);
     }
 }

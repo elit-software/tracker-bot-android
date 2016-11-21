@@ -1,7 +1,7 @@
 package com.elit.trackerbot;
 
-import com.elit.trackerbot.core.TrackingService;
-import com.elit.trackerbot.core.TrackingServiceObserver;
+import com.elit.TrackingService;
+import com.elit.TrackingServiceObserver;
 
 public class FakeTrackingService implements TrackingService {
     @Override

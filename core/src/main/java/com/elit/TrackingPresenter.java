@@ -1,4 +1,4 @@
-package com.elit.trackerbot.core;
+package com.elit;
 
 public class TrackingPresenter implements TrackingServiceObserver {
 
